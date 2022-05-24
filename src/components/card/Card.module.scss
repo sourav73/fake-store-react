@@ -1,0 +1,32 @@
+@import "../../styles/utilities/variables";
+
+.card {
+  &:hover {
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+  }
+}
+
+.cardImage {
+  height: 250px;
+}
+
+.cardHeading {
+  font-size: 1.1rem;
+  a {
+    text-decoration: none;
+    color: $primary-text;
+    transition: 0.2s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.cardText {
+  font-size: 0.9rem;
+}
+
+.price {
+  color: $primary-color;
+  font-weight: bold;
+}

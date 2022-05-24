@@ -1,0 +1,138 @@
+@import "./variables";
+
+// Padding classes
+@for $i from 1 to 100 {
+  .cp-#{$i} {
+    padding: #{$i}px;
+  }
+}
+
+@for $i from 1 to 100 {
+  .cpb-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+}
+
+@for $i from 1 to 100 {
+  .cpt-#{$i} {
+    padding-top: #{$i}px;
+  }
+}
+
+@for $i from 1 to 100 {
+  .cps-#{$i} {
+    padding-left: #{$i}px;
+  }
+}
+
+@for $i from 1 to 100 {
+  .cpe-#{$i} {
+    padding-right: #{$i}px;
+  }
+}
+
+// Margin classes
+@for $i from 1 to 100 {
+  .cm-#{$i} {
+    margin: #{$i}px;
+  }
+}
+
+@for $i from 1 to 100 {
+  .cmb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}
+
+@for $i from 1 to 100 {
+  .cmt-#{$i} {
+    margin-top: #{$i}px;
+  }
+}
+
+@for $i from 1 to 100 {
+  .cms-#{$i} {
+    margin-left: #{$i}px;
+  }
+}
+
+@for $i from 1 to 100 {
+  .cme-#{$i} {
+    margin-right: #{$i}px;
+  }
+}
+
+$breakpoints: (
+  "sm": $breakpoint-sm,
+  "md": $breakpoint-md,
+  "lg": $breakpoint-lg,
+  "xl": $breakpoint-xl,
+);
+
+@each $key,
+$breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+
+    // Padding classes
+    @for $i from 1 to 100 {
+      .cp-#{$key}-#{$i} {
+        padding: #{$i}px;
+      }
+    }
+
+    @for $i from 1 to 100 {
+      .cpt-#{$key}-#{$i} {
+        padding-top: #{$i}px;
+      }
+    }
+
+    @for $i from 1 to 100 {
+      .cpe-#{$key}-#{$i} {
+        padding-right: #{$i}px;
+      }
+    }
+
+    @for $i from 1 to 100 {
+      .cpb-#{$key}-#{$i} {
+        padding-bottom: #{$i}px;
+      }
+    }
+
+    @for $i from 1 to 100 {
+      .cps-#{$key}-#{$i} {
+        padding-left: #{$i}px;
+      }
+    }
+
+    // Margin classes
+    @for $i from 1 to 100 {
+      .cm-#{$key}-#{$i} {
+        margin: #{$i}px;
+      }
+    }
+
+    @for $i from 1 to 100 {
+      .cmt-#{$key}-#{$i} {
+        margin-top: #{$i}px;
+      }
+    }
+
+    @for $i from 1 to 100 {
+      .cme-#{$key}-#{$i} {
+        margin-right: #{$i}px;
+      }
+    }
+
+    @for $i from 1 to 100 {
+      .cmb-#{$key}-#{$i} {
+        margin-bottom: #{$i}px;
+      }
+    }
+
+    @for $i from 1 to 100 {
+      .cms-#{$key}-#{$i} {
+        margin-left: #{$i}px;
+      }
+    }
+  }
+}

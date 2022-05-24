@@ -1,0 +1,11 @@
+// @for $i from 1 to 7 {
+//   @mixin heading-#{$i}($font-size, $color) {
+//     font-size: $font-size;
+//     color: $color;
+//   }
+// }
+
+@mixin heading-style($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
+}

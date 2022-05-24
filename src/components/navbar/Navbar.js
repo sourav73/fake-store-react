@@ -13,8 +13,6 @@ export default function Navbar() {
     setIsOpen(false);
   }
 
-
-
   return (
     <header className={`d-flex justify-content-between align-items-center ${styles.header}`}>
       <div className={`${styles.brandLogo} d-flex`}>

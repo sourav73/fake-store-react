@@ -1,0 +1,62 @@
+@import "../../styles/utilities/variables";
+@import "../../styles/utilities/mixins";
+
+.productGallery {
+  img {
+    height: 350px;
+    width: 300px;
+  }
+}
+
+.title {
+  @include heading-style(1.5rem, $primary-text);
+}
+
+.category {
+  text-transform: capitalize;
+  color: $secondary-text;
+}
+
+.quantity {
+  button {
+    background: none;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #ccc;
+
+    &:first-child {
+      padding: 0.3rem 0.7rem;
+    }
+  }
+
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    width: 2.5rem;
+    text-align: center;
+  }
+}
+
+.infoTab {
+  :global(.nav-tabs) {
+    button {
+      color: $primary-text;
+
+      &:global(.active) {
+        color: $secondary-text;
+      }
+
+      &:hover {
+        color: $primary-dark;
+      }
+    }
+  }
+}
+
+.review {
+  textarea {
+    &:global(.form-control) {
+      height: 7rem;
+      resize: none;
+    }
+  }
+}

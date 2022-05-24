@@ -1,0 +1,33 @@
+@import "./variables";
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+.cbtn {
+  @extend .button;
+  background: $primary-color;
+  color: #fff;
+
+  &:hover {
+    background: $primary-dark;
+    color: #fff;
+  }
+}
+
+.cbtn-outline {
+  @extend .button;
+  background: #fff;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
+}

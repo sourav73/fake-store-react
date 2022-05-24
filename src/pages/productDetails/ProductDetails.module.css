@@ -1,0 +1,49 @@
+.productGallery img {
+  height: 350px;
+  width: 300px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #424242;
+}
+
+.category {
+  text-transform: capitalize;
+  color: #757474;
+}
+
+.quantity button {
+  background: none;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #ccc;
+}
+
+.quantity button:first-child {
+  padding: 0.3rem 0.7rem;
+}
+
+.quantity input {
+  outline: none;
+  border: 1px solid #ccc;
+  width: 2.5rem;
+  text-align: center;
+}
+
+.infoTab :global(.nav-tabs) button {
+  color: #424242;
+}
+
+.infoTab :global(.nav-tabs) button:global(.active) {
+  color: #757474;
+}
+
+.infoTab :global(.nav-tabs) button:hover {
+  color: #d6680f;
+}
+
+.review textarea:global(.form-control) {
+  height: 7rem;
+  resize: none;
+}
+/*# sourceMappingURL=ProductDetails.module.css.map */

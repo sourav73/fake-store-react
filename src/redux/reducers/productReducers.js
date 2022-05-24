@@ -27,8 +27,8 @@ export const selectedProductReducer = (state = {}, { type, payload }) => {
 export const cartReducer = (state = [], { type, payload }) => {
   switch (type) {
     case actionTypes.UPDATE_CART:
-      return []
+      return [...state, payload]
     default:
-      return state
+      return state;
   }
 }

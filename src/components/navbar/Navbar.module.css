@@ -87,14 +87,12 @@
 }
 
 .mobileSearchForm {
-  opacity: 0;
+  display: none;
   position: absolute;
   top: 6vh;
   left: 0;
   z-index: -10;
   width: 100%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .mobileSearchForm input {
@@ -118,7 +116,7 @@
 }
 
 .mobileSearchForm.show {
-  opacity: 1;
+  display: block;
 }
 
 .profile,

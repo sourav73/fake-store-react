@@ -1,0 +1,33 @@
+.card:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cardImage {
+  height: 250px;
+}
+
+.cardHeading {
+  font-size: 1.1rem;
+}
+
+.cardHeading a {
+  text-decoration: none;
+  color: #424242;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cardHeading a:hover {
+  color: #ff7300;
+}
+
+.cardText {
+  font-size: 0.9rem;
+}
+
+.price {
+  color: #ff7300;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Card.module.css.map */
