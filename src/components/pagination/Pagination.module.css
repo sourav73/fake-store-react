@@ -1,0 +1,21 @@
+.paginationBtn, .pagination li button:hover, .pagination li button:focus {
+  background-color: #d6680f;
+  border: 1px solid #d6680f;
+  color: #fff;
+}
+
+.pagination li button {
+  color: #ff7300;
+}
+
+.pagination li button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pagination li:global(.page-item.active) button {
+  color: #fff;
+  background-color: #ff7300;
+  border: 1px solid #ff7300;
+}
+/*# sourceMappingURL=Pagination.module.css.map */

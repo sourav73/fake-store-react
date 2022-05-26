@@ -27,7 +27,7 @@ export default function ProductDetails() {
   }, [data, dispatch]);
   return (
     <div className="product mt-4 container">
-      <img src="./images/loading/16x16.gif" alt="loading icon" />
+      {/* <img src="./images/loading/16x16.gif" alt="loading icon" /> */}
       {isPending && (
         <p className="text-center">
           Fetching details{" "}
@@ -48,8 +48,10 @@ export default function ProductDetails() {
           </div>
           <div className="col-sm-12 col-md-6">
             <div className="product-info">
-              <h1 className={styles.title}>{title}</h1>
-              <small className={`${styles.category} mb-3`}>{category}</small>
+              <h1 className={`${styles.title} mb-0`}>{title}</h1>
+              <small className={`${styles.category} mb-3 d-block`}>
+                {category}
+              </small>
               <h5 className="mb-2">{price}$</h5>
               <form action="">
                 {nonVariantCategories.includes(category) ? (
